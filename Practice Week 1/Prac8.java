@@ -1,0 +1,13 @@
+// Write a C program to enter temperature in Celsius and convert it into Fahrenheit.
+import java.util.*;
+class Prac8{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your tempreature in Celsius: ");
+        double celsius = sc.nextDouble();
+
+        double fahrenheit = ((celsius * (9.0/5.0)) + 32);
+
+        System.out.println("Temperature in Fahrenheit: " + fahrenheit);
+    }
+}
