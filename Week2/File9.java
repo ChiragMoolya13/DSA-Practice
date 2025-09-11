@@ -1,17 +1,21 @@
-import java.util.*;
-class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        for(int i = 1; i>=0; i++)
-        {
-            System.out.println("Enter your number: ");
-            int n = sc.nextInt();
-            if(n==10)
-            { 
-                System.out.println("You entreed the number 10 now the program stops!");
-                break;
-            }
-            System.out.println("You entered the numebr: " + n);
+/*Convert number from Binary to Decimal
+Example
+input = 101
+output = 5
+*/
+class File9{
+    public static void main(String[]args){
+        int n = 1010;
+        int power = 1;
+        int sum = 0;
+        while(n > 0){
+            int lastDigit = n % 10;
+            sum = sum + lastDigit * power;
+            power = power * 2;
+            n = n / 10;
         }
+        System.out.println(sum);
+
+
     }
 }

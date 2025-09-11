@@ -8,7 +8,7 @@ class File10 {
         {
             if(i==6)
             { 
-                System.out.println("Lawde ka baal!!!");
+                System.out.println("cant enter 6!!!");
                 continue;
             }
             System.out.println("You entered the number: " + i);

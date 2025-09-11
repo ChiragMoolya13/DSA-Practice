@@ -4,31 +4,37 @@ Example
 input: 10
 output: 2 5 
 */
+import java.util.*;
+public class File7
+{
 
-public class File7 {
-
-    public static boolean isPrime(int n){
+    public static boolean isPrime(int n)
+    {
         int count = 0;
-        for(int i=1; i<=n; i++){
-            if(n%i == 0){
+        for(int i = 1; i<=n;i++)
+        {
+            if(n%i==0)
+            {
                 count++;
             }
         }
-        if(count == 2){
+        if(count==2)
+        {
             return true;
         }
-        else{
+        else
+        {
             return false;
         }
     }
     public static void main(String[] args) {
-        int n = 24;
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
 
-        for(int i = 1; i<=n; i++){
-            if(n%i==0 && isPrime(i)){
-                System.out.println(i+ " ");
+        for(int i = 1; i<=a;i++){
+            if((a%i==0) && (isPrime(i)==true)){
+                System.out.print(i+ " ");
             }
         }
     }
-    
 }
